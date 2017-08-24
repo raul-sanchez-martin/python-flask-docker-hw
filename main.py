@@ -26,6 +26,11 @@ def hello():
     """Return a friendly HTTP greeting."""
     return 'Hello World!'
 
+@app.route('/adios')
+def adios():
+    """Return a friendly HTTP greeting."""
+    return 'Adios'
+
 
 @app.errorhandler(500)
 def server_error(e):
